@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML to Markdown</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../lib/turndown.js"></script>
+    <script src="../lib/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- <input type="text" id="url-input" placeholder="输入网页地址，例如：https://example.com" /> -->
+        <button id="convert-btn">解析并转换为 Markdown</button>
+        <button id="copy-btn">Copy Markdown</button>
+        <textarea id="output" placeholder="Markdown 输出将出现在这里..." rows="20" readonly></textarea>
+        <div id="notification">Markdown 已复制到剪贴板！</div>
+    </div>
+    <script type="module" src="../js/popup.js"></script>
+</body>
+
+</html>
